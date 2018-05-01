@@ -1,0 +1,80 @@
+<html  lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>Marvin R&uuml;he's Webseite</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+    .img-polaroid {
+      margin: 0 auto;
+      display: block;
+    }
+    .hidden_impressum{
+      display: none;
+    }
+    </style>
+
+	</head>
+	<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Marvin R&uuml;he</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero-unit">
+        <h1>Hallo!!!</h1>
+        <p>Hier ist meine einfache Webseite um auf Dinge von mir zu linken.</p>
+      </div>
+
+      <div class="row">
+        <div class="span4">
+          <h2>Windows 8 SWR3-Radio App</h2>
+          <img src="img/screenshot.png" class="img-polaroid" />
+          <p>Die einfachste Art unter Windows 8, 8.1 und 10, SWR3 als Webradio zu h&ouml;ren. </p>
+          <p><a class="btn" target="_blank" href="http://apps.microsoft.com/windows/app/swr3-webradio/cf3926a9-8b31-41b2-9cc2-5213eef63e8f">Details anzeigen &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Telani</h2>
+          <p>Brandmatrixen einfach visuell erstellen.</p>
+          <p><a class="btn" target="_blank" href="https://telani.net">Telani-Webseite &raquo;</a></p>
+       </div>
+			 <div class="span4">
+				 <h2>GitHub</h2>
+				 <p>Andere Dinge von mir findet man auf GitHub.</p>
+				 <p><a class="btn" target="_blank" href="http://github.com/Marv51">GitHub Profil &raquo;</a></p>
+			</div>
+
+
+      </div>
+
+      <hr>
+
+      <footer>
+
+        <p>&copy; Marvin R&uuml;he 2016</p>
+         <div class="btn-toolbar">
+<div class="btn-group"><a class="btn" id="show_impressum" href="#">Impressum</a></div>
+</div>
+        <p id="impressum" class="hidden_impressum">Die ist meine Webseite, Marvin R&uuml;he, man erreicht mich unter marvin (at) server-fish.de. Ich versuche m&ouml;glichst gr&uuml;ndlich bei Inhalten und Links zu sein, bin aber nicht für verlinkte Webseiten verantwortlich. Wenn Ihnen Fehler oder fragw&uuml;rdige Inhalte auffallen, bitte ich um Nachricht.
+          Zum Thema Datenschutz: Ich 'verfolge' Sie nicht, soll heißen ich zeichne nichts über Ihren Besuch auf dieser Webseite auf.
+          Diese Webseite ist auf Amazon S3 gehostet.
+        </p>
+     </footer>
+
+    </div> <!-- /container -->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+      <script>
+    $(function(){
+      $("#show_impressum").click(function(ev){
+        console.log("Bla");
+        $("#impressum").toggleClass("hidden_impressum");
+      });
+    });
+    </script>
+	</body>
+</html>
