@@ -5,12 +5,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <style>
+
+    *{
+      box-sizing: border-box;
+    }
+
     .img-polaroid {
       margin: 0 auto;
       display: block;
     }
     .hidden_impressum{
       display: none;
+    }
+
+    .span4 h2{
+      font-size: 20pt;
+    }
+
+    .span4 p:first-of-type{
+      height: 4em;
+    }
+
+    .span4 img{
+      margin: 0 0 10px 0;
+      width: 293px;
+      height: 170px;
+    }
+    .main-content{
+      margin-top: 50px;
     }
     </style>
 
@@ -24,38 +46,41 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="hero-unit">
-        <h1>Hallo!!!</h1>
-        <p>Hier ist meine einfache Webseite um auf Dinge von mir zu linken.</p>
-      </div>
-
+    <div class="container main-content">
+      <h2>Projekte</h2>
       <div class="row">
         <div class="span4">
-          <h2>Windows 8 SWR3-Radio App</h2>
+          <h2>SWR3-Radio App</h2>
           <img src="img/screenshot.png" class="img-polaroid" />
           <p>Die einfachste Art unter Windows 8, 8.1 und 10, SWR3 als Webradio zu h&ouml;ren. </p>
           <p><a class="btn" target="_blank" href="https://apps.microsoft.com/windows/app/swr3-webradio/cf3926a9-8b31-41b2-9cc2-5213eef63e8f">Details anzeigen &raquo;</a></p>
         </div>
         <div class="span4">
           <h2>Telani</h2>
-          <p>Brandmatrixen einfach visuell erstellen.</p>
+          <img src="img/telani.png" class="img-polaroid" />
+          <p>Windows App für Brandschutzsachverständige: Brandmatrixen einfach visuell erstellen.</p>
           <p><a class="btn" target="_blank" href="https://telani.net">Telani-Webseite &raquo;</a></p>
        </div>
+       <div class="span4">
+         <h2>Project-Quick-Open</h2>
+         <img src="img/projectOpen.png" class="img-polaroid" />
+         <p>Windows 10 App um häufig benutzte Ordner schnell wiederzufinden und zu öffnen.</p>
+         <p><a class="btn" target="_blank" href="https://www.microsoft.com/store/apps/9N2J8WKZ7PC2">Details anzeigen &raquo;</a></p>
+      </div>
 			 <div class="span4">
-				 <h2>GitHub</h2>
+         <h2>GitHub</h2>
+         <img src="img/github.png" class="img-polaroid" />
 				 <p>Andere Dinge von mir findet man auf GitHub.</p>
 				 <p><a class="btn" target="_blank" href="https://github.com/Marv51">GitHub Profil &raquo;</a></p>
-			</div>
-
-
+      </div>
+      
       </div>
 
       <hr>
 
       <footer>
 
-        <p>&copy; Marvin R&uuml;he 2018</p>
+        <p>&copy; Marvin R&uuml;he 2019</p>
          <div class="btn-toolbar">
 <div class="btn-group"><a class="btn" id="show_impressum" href="#">Impressum</a></div>
 </div>
