@@ -1,173 +1,9 @@
-<html  lang="de">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Marvin R&uuml;he's Webseite</title>
+		<title>Marvin R&uuml;he's Website</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-
-      html, body{
-        margin: 0;
-      }
-
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed, 
-    figure, figcaption, footer, header, hgroup, 
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      vertical-align: baseline;
-    }
-    body {
-      line-height: 1;
-    }
-    ol, ul {
-      list-style: none;
-    }
-    blockquote, q {
-      quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-      content: '';
-      content: none;
-    }
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-
-    *{
-      box-sizing: border-box;
-      font-family: sans-serif;
-    }
-
-    hr {
-      clear: both;
-      margin: 25px 0;
-      display: block;
-    }
-
-    .span4{
-      width: 300px;
-      padding: 10px;
-      margin: 0;
-      flex: auto;
-      position: relative;
-    }
-
-    .img-polaroid {
-      margin: 0 auto;
-      display: block;
-    }
-    .hidden_impressum{
-      display: none;
-    }
-
-    .span4 h3{
-      font-size: 20pt;
-      font-weight: 200;
-      margin: 13px 0 5px 0;
-    }
-
-    .span4 p:first-of-type{
-      height: 4em;
-      width: 293px;
-    }
-
-    .span4 img{
-      margin: 0 0 10px 0;
-      width: 293px;
-      height: 170px;
-    }
-    .main-content{
-      margin-top: 50px;
-    }
-    .navbar {
-      height: 50px;
-      background: #222222;
-      color: lightgray;
-    }
-    .navbar a{
-      color: lightgray;
-      text-decoration: none;
-    }
-
-    .btn{
-      padding: 5px 10px;
-      border: 1px solid black;
-      border-radius: 3px;
-      background-color: lightgray;
-      transition: background-color .5s;
-      margin: 15px 0;
-      color: black;
-      text-decoration: none;
-    }
-
-    .btn:hover{
-      background-color: darkgray;
-    }
-
-    footer{
-      margin: 15px 0px;
-    }
-
-    .navbar-inner{
-      padding: 0px 0px;
-      font-size: 21pt;
-      line-height: 50px;
-    }
-
-    h2{
-      font-size: 20pt;
-      margin: 45px 0 7px 0;
-    }
-
-    .row{
-      margin: 0 -20px 0 0;
-      display: inline-block;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .container{
-      margin: 0px 40px;
-    }
-
-    .img-polaroid{
-      display: block;
-      margin: 0 auto;
-      padding: 4px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-
-    .btn-small{
-      font-size: 80%;
-      background: white;
-      border: 1px solid #c2c2c2;
-    }
-
-    p{
-      line-height: 125%;
-    }
-
-    .btn-small:hover{
-        background-color: #EEE;
-    }
-    </style>
-
+    <link rel="stylesheet" href="style.css"></href>
 	</head>
 	<body>
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -175,13 +11,18 @@
         <div class="container">
           <a class="brand" href="#">Marvin R&uuml;he</a>
         </div>
+        
       </div>
+      <div class="lang">
+          <a href="index.html">en</a> /
+          <a class="not-active" href="index.de.html">de</a>
+        </div>
     </div>
 
     <div class="container main-content">
-      <h2>Kontakt</h2>
-      <p>Man erreicht mich am besten per Mail: <a class="btn btn-small" href="mailto:marvin+website@server-fish.de">marvin@server-fish.de</a>
-      <p>Alternativ:</p>
+      <h2>Contact</h2>
+      <p>The best way to reach me is by mail: <a class="btn btn-small" href="mailto:marvin+website@server-fish.de">marvin@server-fish.de</a>
+      <p>Alternatively:</p>
         <p>
         <a class="btn btn-small" href="https://www.linkedin.com/in/marvinruehe/">LinkedIn</a>
          <a class="btn btn-small" href="https://stackoverflow.com/users/6409018/marv51">StackOverflow</a>
@@ -191,31 +32,31 @@
          <a class="btn btn-small" href="https://letterboxd.com/marv51/">Letterboxd</a>
         </p>
       
-      <h2>Projekte</h2>
+      <h2>Projects</h2>
       <div class="row">
         <div class="span4">
           <h3>SWR3-Radio App</h3>
           <img src="img/screenshot.png" class="img-polaroid" />
-          <p>Die einfachste Art unter Windows 8, 8.1 und 10, SWR3 als Webradio zu h&ouml;ren. </p>
-          <p><a class="btn" target="_blank" href="https://apps.microsoft.com/windows/app/swr3-webradio/cf3926a9-8b31-41b2-9cc2-5213eef63e8f">Details anzeigen &raquo;</a></p>
+          <p>The easiest way to listen to the local German radio station SWR3</p>
+          <p><a class="btn" target="_blank" href="https://apps.microsoft.com/windows/app/swr3-webradio/cf3926a9-8b31-41b2-9cc2-5213eef63e8f">Show details &raquo;</a></p>
         </div>
         <div class="span4">
           <h3>Telani</h3>
           <img src="img/telani.png" class="img-polaroid" />
-          <p>Windows App für Brandschutzsachverständige: Brandmatrixen einfach visuell erstellen.</p>
-          <p><a class="btn" target="_blank" href="https://telani.net">Telani-Webseite &raquo;</a></p>
+          <p>Windows app for fire safety experts: Create building protection concepts visually with ease.</p>
+          <p><a class="btn" target="_blank" href="https://telani.net">Telani website &raquo;</a></p>
        </div>
        <div class="span4">
          <h3>Project-Quick-Open</h3>
          <img src="img/projectOpen.png" class="img-polaroid" />
-         <p>Windows 10 App um häufig benutzte Ordner schnell wiederzufinden und zu öffnen.</p>
-         <p><a class="btn" target="_blank" href="https://www.microsoft.com/store/apps/9N2J8WKZ7PC2">Details anzeigen &raquo;</a></p>
+         <p>Windows 10 app to find and open frequently opened projects.</p>
+         <p><a class="btn" target="_blank" href="https://www.microsoft.com/store/apps/9N2J8WKZ7PC2">Show details &raquo;</a></p>
       </div>
 			 <div class="span4">
          <h3>GitHub</h3>
          <img src="img/github.png" class="img-polaroid" />
-				 <p>Kleinere Projekte von mir findet man auf GitHub.</p>
-				 <p><a class="btn" target="_blank" href="https://github.com/Marv51">GitHub Profil &raquo;</a></p>
+				 <p>Smaller projects of mine are on GitHub.</p>
+				 <p><a class="btn" target="_blank" href="https://github.com/Marv51">GitHub profil &raquo;</a></p>
       </div>
       
       </div>
@@ -224,23 +65,17 @@
 
       <footer>
 
-        <p>&copy; Marvin R&uuml;he 2019 - <a class="btn btn-small" id="show_impressum" href="#">Impressum & Datenschutz</a></p>
+        <p>&copy; Marvin R&uuml;he 2019 - <a class="btn btn-small" id="show_impressum" href="#">Imprint & privacy</a></p>
          <div class="btn-toolbar">
 <div class="btn-group"></div>
 </div>
-        <p id="impressum" class="hidden_impressum">Die ist meine Webseite, Marvin R&uuml;he, man erreicht mich unter marvin (at) server-fish.de. Ich versuche m&ouml;glichst gr&uuml;ndlich bei Inhalten und Links zu sein, bin aber nicht für verlinkte Webseiten verantwortlich. Wenn Ihnen Fehler oder fragw&uuml;rdige Inhalte auffallen, bitte ich um Nachricht.
-          Zum Thema Datenschutz: Ich 'verfolge' Sie nicht, soll heißen ich zeichne nichts über Ihren Besuch auf dieser Webseite auf.
-          Diese Webseite wird von GitHub gehostet, der Quellcode ist <a href="https://github.com/Marv51/website"> hier verfügbar</a>.
+        <p id="impressum" class="hidden_impressum">
+          This is my website, Marvin Rühe, you can reach me at marvin@server-fish.de. I strive to be as careful as possible when it comes to content and websites I link to. However, I can not be held responsible for websites I link to. If you have concerns or find questionable content please contact me.
+          Privacy: I do not record any information about your visit of this website. This website is hosted at GitHub, so they might log some information (There privacy policy can be found: <a href="https://help.github.com/en/articles/github-privacy-statement">here</a>). The source code of this website is available <a href="https://github.com/Marv51/website"> here</a>.
         </p>
      </footer>
 
     </div> <!-- /container -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function(){
-        document.getElementById("show_impressum").addEventListener("click", function(){
-            document.getElementById("impressum").classList.toggle("hidden_impressum")
-        });
-    });
-    </script>
+    <script src="script.js"></script>
 	</body>
 </html>
