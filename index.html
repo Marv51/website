@@ -91,13 +91,11 @@
      </footer>
 
     </div> <!-- /container -->
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-      <script>
-    $(function(){
-      $("#show_impressum").click(function(ev){
-        $("#impressum").toggleClass("hidden_impressum");
-      });
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+        document.getElementById("show_impressum").addEventListener("click", function(){
+            document.getElementById("impressum").classList.toggle("hidden_impressum")
+        });
     });
     </script>
 	</body>
