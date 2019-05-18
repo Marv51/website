@@ -160,6 +160,8 @@ h2{
   font-size: 80%;
   background: white;
   border: 1px solid #c2c2c2;
+  display: inline-block;
+  margin: 2px 0;
 }
 
 p{
