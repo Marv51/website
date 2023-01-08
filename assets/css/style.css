@@ -72,7 +72,7 @@ hr {
   margin: 13px 0 5px 0;
 }
 
-.span4 p:first-of-type{
+.span4 p:nth-of-type(2){
   height: 4em;
   width: 293px;
 }
