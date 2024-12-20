@@ -11,7 +11,7 @@ export function Welcome({lang}: {lang: string}) {
     <div className="navbar navbar-inverse navbar-fixed-top">
       <div className="navbar-inner">
       <div className="container">
-          <a className="brand" href="#">Marvin R&uuml;he</a>
+          <a className="brand" href="/">Marvin R&uuml;he</a>
       </div>
       </div>
       <div className="lang">
