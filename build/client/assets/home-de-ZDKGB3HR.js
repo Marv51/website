@@ -1,0 +1,1 @@
+import{w as e}from"./with-props-CRWrUDBr.js";import{l as t}from"./chunk-D52XG6IA-CG2pnn4M.js";import{W as o}from"./welcome-DXiT3lMv.js";function i({}){return[{title:"Marvin Rühes Webseite"},{lang:"de"}]}const a=e(function(){return t.jsx(o,{lang:"de"})});export{a as default,i as meta};
