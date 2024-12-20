@@ -1,1 +1,0 @@
-import{w as t}from"./with-props-CRWrUDBr.js";import{l as e}from"./chunk-D52XG6IA-CG2pnn4M.js";import{W as o}from"./welcome-DXiT3lMv.js";function i({}){return[{title:"Marvin Rühe's Website"},{lang:"en"}]}const a=t(function(){return e.jsx(o,{lang:"en"})});export{a as default,i as meta};
