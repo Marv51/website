@@ -3,7 +3,7 @@ import { Profiles } from "../profiles/profiles";
 
 import "../app.css";
 import { Footer } from "../footer/footer";
-import { Link, NavLink } from "react-router";
+import { NavLink } from "react-router";
 
 export function Welcome({lang}: {lang: string}) {
   return (
