@@ -51,14 +51,14 @@ export function Welcome({lang}: {lang: string}) {
           link_text_de="GitHub Profil"
           link_text_en="GitHub profil"
           link_target="https://github.com/Marv51"
-          image="img/github.png" />
+          image="/img/github.png" />
           <Project
           lang={lang}
           projectName="Project-Quick-Open"
           description_de="Windows 10 App um häufig benutzte Ordner schnell wiederzufinden und zu öffnen."
           description_en="Windows 10 app to find and open frequently opened projects."
           link_target="https://www.microsoft.com/store/apps/9N2J8WKZ7PC2"
-          image="img/projectOpen.png"
+          image="/img/projectOpen.png"
           />
           <Project
           lang={lang}
@@ -66,7 +66,7 @@ export function Welcome({lang}: {lang: string}) {
           description_de="Die einfachste Art unter Windows 8.1 und 10, SWR3 als Webradio zu h&ouml;ren."
           description_en="The easiest way to listen to the local German radio station SWR3"
           link_target="https://apps.microsoft.com/windows/app/swr3-webradio/cf3926a9-8b31-41b2-9cc2-5213eef63e8f"
-          image="img/screenshot.png"
+          image="/img/screenshot.png"
           />
           <Project
           lang={lang}
@@ -76,7 +76,7 @@ export function Welcome({lang}: {lang: string}) {
           link_text_de="Telani Webseite"
           link_text_en="Telani website"
           link_target="https://telani.net"
-          image="img/telani.png"
+          image="/img/telani.png"
           />
       </div>
 
