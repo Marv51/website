@@ -8,18 +8,6 @@ import { NavLink } from "react-router";
 export function Welcome({lang}: {lang: string}) {
   return (
     <>
-    <div className="navbar navbar-inverse navbar-fixed-top">
-      <div className="navbar-inner">
-      <div className="container">
-          <a className="brand" href="/">Marvin R&uuml;he</a>
-      </div>
-      </div>
-      <div className="lang">
-          <NavLink className={({ isActive }) => isActive ? "" : "not-active"} to="/">en</NavLink> /&nbsp;
-          <NavLink className={({ isActive }) => isActive ? "" : "not-active"} to="/de">de</NavLink>
-      </div>
-  </div>
-    <div className="container main-content">
       <h2>{lang === "en" ? "Contact" : "Kontakt"}</h2>
       {lang === "en" ? <>
       <p>
@@ -78,11 +66,7 @@ export function Welcome({lang}: {lang: string}) {
           link_target="https://telani.net"
           image="/img/telani.png"
           />
-      </div>
-
-      <Footer lang={lang} />
-
-    </div>
+        </div>
     </>
   );
 }

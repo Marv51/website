@@ -24,7 +24,7 @@ export function Project({lang, projectName, image, link_target, description_en, 
         <h3>{projectName}</h3>
         <p><a target="_blank" href={link_target}><img src={image} className="img-polaroid" /></a></p>
         <p>{description_en}</p>
-        <p><a className="btn" target="_blank" href="{{project.link_target}}">{link_text_en ?? "Show details" } &raquo;</a></p>
+        <p><a className="btn" target="_blank" href={link_target}>{link_text_en ?? "Show details" } &raquo;</a></p>
     </div>
     </>
 }
