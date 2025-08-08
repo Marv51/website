@@ -9,7 +9,7 @@ export function Footer({lang} : {
             <>
             <hr />
             <footer>
-              <p>&copy; Marvin R&uuml;he 2018 - {new Date().getFullYear()} | <NavLink id="show_impressum" to="/imprint">Imprint & privacy</NavLink></p>
+              <p>&copy; Marvin R&uuml;he 2018 - {new Date().getFullYear()} | <NavLink id="show_impressum" to="/en/imprint">Imprint & privacy</NavLink></p>
            </footer>
            </>
         );
@@ -19,7 +19,7 @@ export function Footer({lang} : {
         <>
           <hr />
           <footer>
-            <p>&copy; Marvin R&uuml;he 2018 - {new Date().getFullYear()} | <NavLink to="/impressum" id="show_impressum">Impressum & Datenschutz</NavLink></p>
+            <p>&copy; Marvin R&uuml;he 2018 - {new Date().getFullYear()} | <NavLink to="/de/impressum" id="show_impressum">Impressum & Datenschutz</NavLink></p>
           </footer>
        </>
     );
