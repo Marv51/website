@@ -1,4 +1,4 @@
-import { type RouteConfig, index, layout, route } from "@react-router/dev/routes";
+import { type RouteConfig, index, layout, prefix, route } from "@react-router/dev/routes";
 
 export default [
     
@@ -6,11 +6,15 @@ export default [
     route("/SWR3App/datenschutz.html", "routes/swr3-app-privacy.tsx"),
     layout("routes/layout.tsx", [
         index("routes/home.tsx"),
-        route("/imprint", "routes/imprint.tsx"),
+        ...prefix("en", [
+            route("imprint", "routes/imprint.tsx"),
+        ]),
     ]),
     layout("routes/layout-de.tsx", [
-        route("/de", "routes/home-de.tsx"),
-        route("/impressum", "routes/imprint-de.tsx"),
+        ...prefix("de", [
+            index("routes/home-de.tsx"),
+            route("impressum", "routes/imprint-de.tsx"),
+        ]),
     ]),
     
 ] satisfies RouteConfig;
