@@ -18,12 +18,12 @@
   },
   "devDependencies": {
     "@react-router/dev": "^7.0.2",
-    "@types/node": "^22",
+    "@types/node": "^24",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
-    "cross-env": "^7.0.3",
+    "cross-env": "^10.0.0",
     "typescript": "^5.7.2",
-    "vite": "^6.0.7",
+    "vite": "^7.0.3",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
