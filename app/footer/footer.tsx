@@ -1,4 +1,4 @@
-import { Link, NavLink, useSearchParams } from "react-router";
+import { NavLink } from "react-router";
 
 export function Footer({lang} : {
     lang: string

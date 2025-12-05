@@ -1,7 +1,7 @@
 import type { Route } from "./+types/layout";
 import { Imprint } from "../imprint/imprint";
 import { NavLink, Outlet } from "react-router";
-import { Footer } from "~/footer/footer";
+import { Footer } from "../footer/footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
