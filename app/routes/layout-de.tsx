@@ -18,8 +18,8 @@ export default function Layout() {
     </div>
     </div>
     <div className="lang">
-        <NavLink className={({ isActive }) => isActive ? "" : "not-active"} to="/">en</NavLink> /&nbsp;
-        <NavLink className={({ isActive }) => isActive ? "" : "not-active"} to="/de">de</NavLink>
+        <NavLink className={({ isActive }) => isActive ? "lang-left" : "not-active lang-left"} to="/">en</NavLink>
+        <NavLink className={({ isActive }) => isActive ? "lang-right" : "not-active lang-right"} to="/de">de</NavLink>
     </div>
 </div>
   <div className="container main-content">
