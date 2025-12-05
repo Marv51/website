@@ -1,5 +1,5 @@
 import type { Route } from "./+types/swr3-app-privacy";
-import { SWR3App } from "~/swr3-app-privacy/swr3-app";
+import { SWR3App } from "../swr3-app-privacy/swr3-app";
 
 export function meta({}: Route.MetaArgs) {
   return [
