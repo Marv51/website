@@ -33,6 +33,7 @@ export function Welcome({lang}: {lang: string}) {
       <div className="row">
         <Project
           lang={lang}
+          priority={true}
           projectName="GitHub"
           description_de="Kleinere Projekte von mir findet man auf GitHub."
           description_en="Smaller projects of mine are on GitHub."
@@ -43,18 +44,12 @@ export function Welcome({lang}: {lang: string}) {
           <Project
           lang={lang}
           projectName="Project-Quick-Open"
-          description_de="Windows 10 App um häufig benutzte Ordner schnell wiederzufinden und zu öffnen."
-          description_en="Windows 10 app to find and open frequently opened projects."
+          description_de="Windows 11 App um häufig benutzte Ordner schnell wiederzufinden und zu öffnen."
+          description_en="Windows 11 app to find and open frequently opened projects."
           link_target="https://www.microsoft.com/store/apps/9N2J8WKZ7PC2"
+          link_text_de="Microsoft Store"
+          link_text_en="Microsoft Store"
           image="/img/projectOpen.png"
-          />
-          <Project
-          lang={lang}
-          projectName="SWR3-Radio App"
-          description_de="Die einfachste Art unter Windows 8.1 und 10, SWR3 als Webradio zu h&ouml;ren."
-          description_en="The easiest way to listen to the local German radio station SWR3"
-          link_target="https://apps.microsoft.com/windows/app/swr3-webradio/cf3926a9-8b31-41b2-9cc2-5213eef63e8f"
-          image="/img/screenshot.png"
           />
           <Project
           lang={lang}
@@ -65,6 +60,14 @@ export function Welcome({lang}: {lang: string}) {
           link_text_en="Telani website"
           link_target="https://telani.net"
           image="/img/telani.png"
+          />
+          <Project
+          lang={lang}
+          projectName="SWR3-Radio App"
+          description_de="Die einfachste Art unter Windows 8.1 und 10, SWR3 als Webradio zu h&ouml;ren."
+          description_en="The easiest way to listen to the local German radio station SWR3"
+          link_target="https://apps.microsoft.com/windows/app/swr3-webradio/cf3926a9-8b31-41b2-9cc2-5213eef63e8f"
+          image="/img/screenshot.png"
           />
         </div>
     </>
