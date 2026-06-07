@@ -17,6 +17,9 @@
   --button-small-border: #c2c2c2;
   --button-small-hover-background: #EEE;
 
+  --nav-lang-switcher: rgb(90 58 85);
+  --nav-lang-switcher-foreground: #d2d1d1;
+
   --polaroid-frame: #fff;
   --polaroid-frame-border: #ccc;
   --polaroid-frame-shadow: rgba(0,0,0,0.1);
@@ -34,6 +37,9 @@
     --button-border: rgb(115, 57, 100);
     --button-text: rgb(232, 232, 232);
     --button-hover-background: rgb(90, 7, 96);
+
+    --nav-lang-switcher: rgb(90 58 85);
+    --nav-lang-switcher-foreground: #d8d8d8;
 
     --button-small-background: rgb(36, 36, 36);
     --button-small-border: rgb(115, 57, 100);
@@ -160,7 +166,8 @@ hr {
 }
 
 .lang > a{
-  background-color: var(--button-background);
+  color: var(--nav-lang-switcher-foreground);
+  background-color: var(--nav-lang-switcher);
 }
 
 a.not-active{
