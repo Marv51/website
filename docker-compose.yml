@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      # Mount the source for live editing...
+      - ./src:/app
+      # ...but keep the container's own node_modules (Linux-native deps).
+      - /app/node_modules
+    environment:
+      # Vite/chokidar can't see host file events through the bind mount on
+      # macOS/Windows, so fall back to polling to make HMR reliable.
+      - CHOKIDAR_USEPOLLING=true
