@@ -15,25 +15,26 @@ jobs:
 
     runs-on: ubuntu-24.04
 
-    strategy:
-      matrix:
-        node-version: [24.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    defaults:
+      run:
+        working-directory: src
 
     steps:
     - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
+
+    - name: Setup node.js
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        node-version-file: src/package.json
+
     - run: npm ci
+
     - run: npm run build
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./build/client
+        path: ./src/build/client
 
   deploy:
     needs: build
