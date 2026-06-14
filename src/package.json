@@ -6,6 +6,7 @@
     "node": "24"
   },
   "scripts": {
+    "prebuild": "node scripts/fetch-duolingo.mjs",
     "build": "cross-env NODE_ENV=production react-router build",
     "dev": "react-router dev",
     "start": "cross-env NODE_ENV=production react-router-serve ./build/server/index.js",
