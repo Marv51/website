@@ -1,100 +1,50 @@
-# Welcome to React Router!
+# ruehe.me
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Marvin Rühe's personal website — a bilingual (English/German) static site built with [React Router 7](https://reactrouter.com/) and deployed to GitHub Pages at [ruehe.me](https://ruehe.me).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+The site is prerendered (`ssr: false`, `prerender: true`), so the production build is plain static HTML and assets — there is no runtime server.
 
-## Features
+## Project layout
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+The application lives in [`src/`](./src), not the repository root. Run all `npm` commands from there.
 
-## Getting Started
+```
+src/
+├── app/
+│   ├── routes.ts          # route configuration (config-based)
+│   ├── root.tsx           # document shell + language detection
+│   ├── routes/            # thin page components (en under /, de under /de)
+│   ├── welcome/ project/ profiles/ footer/ imprint/   # shared components
+│   └── app.css            # hand-written CSS (variables + dark mode)
+└── public/                # static assets + CNAME
+```
 
-### Installation
+## Development
 
-Install the dependencies:
+Requires Node 24 (pinned via `engines`).
 
 ```bash
+cd src
 npm install
+npm run dev        # Vite dev server with HMR at http://localhost:5173
 ```
 
-### Development
+Other scripts (from `src/`):
 
-Start the development server with HMR:
+- `npm run build` — production build into `src/build/client`
+- `npm run typecheck` — `react-router typegen` then `tsc`
+- `npm start` — serve a built app locally
+
+### Containerized development
+
+From the repository root:
 
 ```bash
-npm run dev
+docker-compose up
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
+This runs the dev server in a Node 24 container with `src/` bind-mounted for live editing, reachable at http://localhost:5173. Dependencies install at container startup, so a `package.json` change just needs a container restart.
 
 ## Deployment
 
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
-
-```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+Pushing to `main` triggers [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml), which builds the site and publishes `src/build/client` to GitHub Pages. Pull requests build but do not deploy.

@@ -2,3 +2,7 @@ node_modules
 .DS_Store
 build
 .react-router
+
+# Personal CV / résumé PDFs — reference only, never publish
+Lebenslauf*.pdf
+*-cv.pdf

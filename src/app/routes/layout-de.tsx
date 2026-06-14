@@ -12,11 +12,6 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Layout() {
   return (<><div className="navbar navbar-inverse navbar-fixed-top">
-    <div className="navbar-inner">
-    <div className="container">
-        <a className="brand" href="/">Marvin R&uuml;he</a>
-    </div>
-    </div>
     <div className="lang">
         <NavLink className={({ isActive }) => isActive ? "lang-left" : "not-active lang-left"} to="/">en</NavLink>
         <NavLink className={({ isActive }) => isActive ? "lang-right" : "not-active lang-right"} to="/de">de</NavLink>
