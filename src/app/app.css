@@ -674,56 +674,6 @@ h2{
   transform: rotate(180deg);
 }
 
-.msix-cta{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px 24px;
-  max-width: 600px;
-  margin: 36px 0 36px auto;
-  padding: 22px 26px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
-  color: #fff;
-  box-shadow: 0 6px 20px var(--polaroid-frame-shadow);
-}
-
-.msix-cta-body{
-  flex: 1 1 280px;
-}
-
-.msix-cta-title{
-  margin: 0 0 6px 0;
-  font-size: 16pt;
-  font-weight: 600;
-}
-
-.msix-cta-text{
-  margin: 0;
-  font-size: 11pt;
-  line-height: 1.4;
-  opacity: .95;
-}
-
-.msix-cta-btn,
-.msix-cta-btn:visited{
-  flex: 0 0 auto;
-  padding: 9px 18px;
-  border-radius: 6px;
-  background-color: #fff;
-  color: var(--accent);
-  border: 1px solid #fff;
-  font-weight: 600;
-  white-space: nowrap;
-  text-decoration: none;
-  transition: background-color .2s ease;
-}
-
-.msix-cta-btn:hover{
-  background-color: rgba(255, 255, 255, .85);
-}
-
 .small-projects{
   list-style: none;
   margin: 0;

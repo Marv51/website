@@ -165,12 +165,6 @@ export function XamlDoc({ lang, role, tagline, projects, skills, experience, sma
         ))}
         <Close n={3} name="ItemsControl" />
 
-        <Cm n={3} text="MSIX Consulting" />
-        <Open n={3} name="Border" attrs={[["Style", "{StaticResource AccentBanner}"]]} />
-        <Self n={4} name="TextBlock" attrs={[["Text", "MSIX Consulting"], ["FontWeight", "SemiBold"]]} />
-        <Self n={4} name="Button" attrs={[["Content", t("Get in touch", "Kontakt aufnehmen")]]} />
-        <Close n={3} name="Border" />
-
         <Cm n={3} text={t("Projects", "Projekte")} />
         <Open n={3} name="ItemsControl" attrs={[["Header", t("Projects", "Projekte")]]} />
         {projects.map((p, i) => (
