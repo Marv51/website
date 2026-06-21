@@ -127,8 +127,8 @@ const EXPERIENCE = [
     role_de: "Teamleitung Softwareentwicklung",
     org_en: "gb&t Gebäudebestand und Technik",
     org_de: "gb&t Gebäudebestand und Technik",
-    desc_en: "Technical roadmap and architecture of telani; on-device AI (ONNX, semantic search), open-sourcing core libraries, and mentoring.",
-    desc_de: "Technische Roadmap und Architektur von telani; lokale KI (ONNX, Semantic Search), Open-Sourcing von Kern-Bibliotheken und Mentoring.",
+    desc_en: "Product direction, roadmap, and architecture of telani; on-device AI (ONNX, semantic search), open-sourcing core libraries, and mentoring.",
+    desc_de: "Produktausrichtung, Roadmap und Architektur von telani; lokale KI (ONNX, Semantic Search), Open-Sourcing von Kern-Bibliotheken und Mentoring.",
   },
   {
     period_en: "2022 – 2026",
@@ -255,19 +255,6 @@ export function Welcome({lang}: {lang: string}) {
           <span className="exp-more-chevron" aria-hidden="true">&#9662;</span>
         </label>
       </div>
-      <aside className="msix-cta">
-        <div className="msix-cta-body">
-          <h3 className="msix-cta-title">MSIX Consulting</h3>
-          <p className="msix-cta-text">
-            {lang === "en"
-              ? "Need help packaging your app with MSIX? I'm among the most experienced MSIX packaging experts in the world — let's talk."
-              : "Brauchen Sie Hilfe beim Verpacken Ihrer App mit MSIX? Ich gehöre zu den erfahrensten MSIX-Packaging-Experten weltweit — sprechen wir."}
-          </p>
-        </div>
-        <a className="msix-cta-btn" href="mailto:marvin+msix@server-fish.de?subject=MSIX%20Consulting">
-          {lang === "en" ? "Get in touch" : "Kontakt aufnehmen"}
-        </a>
-      </aside>
       <h2>{lang === "en" ? "Projects" : "Projekte"}</h2>
       <div className="row">
         {PROJECTS.map((p) => (
