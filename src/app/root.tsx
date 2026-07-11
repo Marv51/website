@@ -10,6 +10,7 @@ import {
 
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
+import { NotFound } from "./not-found/not-found";
 
 export const links: Route.LinksFunction = () => [
   { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
@@ -21,7 +22,7 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   var matches = useMatches();
-  var is_de = matches[matches.length - 1].id.endsWith("-de");
+  var is_de = matches[matches.length - 1]?.id.endsWith("-de") ?? false;
   return (
     <html lang={is_de ? "de" : "en"}>
       <head>
@@ -44,16 +45,19 @@ export default function App() {
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+  // An unknown URL (e.g. GitHub Pages serving 404.html for /foo) boots the app
+  // with no matching route, landing here with a 404 — show the styled page.
+  if (isRouteErrorResponse(error) && error.status === 404) {
+    return <NotFound />;
+  }
+
   let message = "Oops!";
   let details = "An unexpected error occurred.";
   let stack: string | undefined;
 
   if (isRouteErrorResponse(error)) {
-    message = error.status === 404 ? "404" : "Error";
-    details =
-      error.status === 404
-        ? "The requested page could not be found."
-        : error.statusText || details;
+    message = "Error";
+    details = error.statusText || details;
   } else if (import.meta.env.DEV && error && error instanceof Error) {
     details = error.message;
     stack = error.stack;
