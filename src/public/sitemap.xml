@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ruehe.me/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruehe.me/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ruehe.me/de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruehe.me/" />
+  </url>
+  <url>
+    <loc>https://ruehe.me/de</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruehe.me/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ruehe.me/de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruehe.me/" />
+  </url>
+  <url>
+    <loc>https://ruehe.me/en/imprint</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruehe.me/en/imprint" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ruehe.me/de/impressum" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruehe.me/en/imprint" />
+  </url>
+  <url>
+    <loc>https://ruehe.me/de/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruehe.me/en/imprint" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ruehe.me/de/impressum" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruehe.me/en/imprint" />
+  </url>
+</urlset>

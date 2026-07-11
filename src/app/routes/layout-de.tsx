@@ -6,7 +6,6 @@ import { Footer } from "../footer/footer";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Marvin Rühe's Webseite" },
-    { lang: "en" }
   ];
 }
 

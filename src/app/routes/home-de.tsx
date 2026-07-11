@@ -1,5 +1,8 @@
 import type { Route } from "./+types/home-de";
 import { Welcome } from "../welcome/welcome";
+import { bilingualLinks } from "../seo-links";
+
+export const links: Route.LinksFunction = () => bilingualLinks("/", "/de", "de");
 
 export function meta({}: Route.MetaArgs) {
   return [
