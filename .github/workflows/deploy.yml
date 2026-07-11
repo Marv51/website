@@ -34,6 +34,11 @@ jobs:
 
     - run: npm run build
 
+    # GitHub Pages serves a root-level 404.html for unknown URLs. React Router
+    # prerenders the route to 404/index.html, so copy it to the flat filename.
+    - name: Add 404 page for GitHub Pages
+      run: cp build/client/404/index.html build/client/404.html
+
     - name: Upload artifact
       # Only upload after merge to main, not on pull request builds.
       if: github.event_name == 'push'
