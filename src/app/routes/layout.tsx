@@ -3,6 +3,7 @@ import { Imprint } from "../imprint/imprint";
 import { Outlet } from "react-router";
 import { Footer } from "../footer/footer";
 import { LangSwitcher } from "../lang-switcher/lang-switcher";
+import { NavBrand } from "../nav-brand/nav-brand";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -12,6 +13,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Layout() {
   return (<><div className="navbar navbar-inverse navbar-fixed-top">
+    <NavBrand lang="en" />
     <LangSwitcher />
 </div>
   <div className="container main-content">
