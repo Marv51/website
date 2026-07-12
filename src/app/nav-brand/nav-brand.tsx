@@ -12,10 +12,8 @@ export function NavBrand({ lang }: { lang: Lang }) {
   if (pathname === home) return null;
 
   return (
-    <div className="nav-brand-container">
-      <Link className="nav-brand" to={home}>
-        Marvin R&uuml;he
-      </Link>
-    </div>
+    <Link className="nav-brand" to={home}>
+      Marvin R&uuml;he
+    </Link>
   );
 }

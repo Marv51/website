@@ -13,8 +13,10 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Layout() {
   return (<><div className="navbar navbar-inverse navbar-fixed-top">
-    <NavBrand lang="en" />
-    <LangSwitcher />
+    <div className="navbar-content">
+      <NavBrand lang="en" />
+      <LangSwitcher />
+    </div>
 </div>
   <div className="container main-content">
     <Outlet />

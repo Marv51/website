@@ -13,6 +13,3 @@ export function meta({}: Route.MetaArgs) {
 export default function HomeDe() {
   return <Imprint lang="de" />;
 }
-
-
-  
