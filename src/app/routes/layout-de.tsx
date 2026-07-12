@@ -3,10 +3,7 @@ import { Imprint } from "../imprint/imprint";
 import { Outlet } from "react-router";
 import { Footer } from "../footer/footer";
 import { LangSwitcher } from "../lang-switcher/lang-switcher";
-<<<<<<< Updated upstream
-=======
 import { NavBrand } from "../nav-brand/nav-brand";
->>>>>>> Stashed changes
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -16,11 +13,8 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Layout() {
   return (<><div className="navbar navbar-inverse navbar-fixed-top">
-<<<<<<< Updated upstream
-=======
     <NavBrand lang="de" />
     
->>>>>>> Stashed changes
     <LangSwitcher />
 </div>
   <div className="container main-content">
