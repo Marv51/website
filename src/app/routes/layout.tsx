@@ -1,7 +1,8 @@
 import type { Route } from "./+types/layout";
 import { Imprint } from "../imprint/imprint";
-import { NavLink, Outlet } from "react-router";
+import { Outlet } from "react-router";
 import { Footer } from "../footer/footer";
+import { LangSwitcher } from "../lang-switcher/lang-switcher";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,10 +12,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Layout() {
   return (<><div className="navbar navbar-inverse navbar-fixed-top">
-    <div className="lang">
-        <NavLink className={({ isActive }) => isActive ? "lang-left" : "not-active lang-left"} to="/">en</NavLink>
-        <NavLink className={({ isActive }) => isActive ? "lang-right" : "not-active lang-right"} to="/de">de</NavLink>
-    </div>
+    <LangSwitcher />
 </div>
   <div className="container main-content">
     <Outlet />
