@@ -1,8 +1,8 @@
 import type { Route } from "./+types/home-de";
 import { Welcome } from "../welcome/welcome";
-import { bilingualLinks } from "../seo-links";
+import { bilingualLinks, PAGES } from "../seo-links";
 
-export const links: Route.LinksFunction = () => bilingualLinks("/", "/de", "de");
+export const links: Route.LinksFunction = () => bilingualLinks(PAGES.home, "de");
 
 export function meta({}: Route.MetaArgs) {
   const title = "Marvin Rühe — Teamleitung Softwareentwicklung";

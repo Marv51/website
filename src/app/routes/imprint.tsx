@@ -1,9 +1,8 @@
 import type { Route } from "./+types/imprint";
 import { Imprint } from "../imprint/imprint";
-import { bilingualLinks } from "../seo-links";
+import { bilingualLinks, PAGES } from "../seo-links";
 
-export const links: Route.LinksFunction = () =>
-  bilingualLinks("/en/imprint", "/de/impressum", "en");
+export const links: Route.LinksFunction = () => bilingualLinks(PAGES.imprint, "en");
 
 export function meta({}: Route.MetaArgs) {
   return [
