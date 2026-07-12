@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home-de";
 import { Welcome } from "../welcome/welcome";
-import { bilingualLinks, PAGES } from "../seo-links";
+import { bilingualLinks, PAGES, SITE_URL } from "../seo-links";
 
 export const links: Route.LinksFunction = () => bilingualLinks(PAGES.home, "de");
 
@@ -8,8 +8,8 @@ export function meta({}: Route.MetaArgs) {
   const title = "Marvin Rühe — Teamleitung Softwareentwicklung";
   const description =
     "Marvin Rühe — Teamleitung Softwareentwicklung bei gb&t. Ich entwickle Windows-Apps (WinUI 3, WPF, MSIX), lokale KI und Web-Tools und leite die Entwicklung der preisgekrönten Software telani.";
-  const url = "https://ruehe.me/de";
-  const image = "https://ruehe.me/og-de.jpg";
+  const url = `${SITE_URL}${PAGES.home.de}`;
+  const image = `${SITE_URL}/og-de.jpg`;
   return [
     { title },
     { name: "description", content: description },
