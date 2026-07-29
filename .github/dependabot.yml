@@ -1,11 +1,25 @@
 version: 2
+# Version updates are batched into one grouped PR per ecosystem on a slow
+# cadence. Dependabot *security* updates are triggered by advisories, not by
+# this schedule, so they still open immediately.
 updates:
   - package-ecosystem: "npm"
     directory: "/src"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    # Widen the default 3-day wait before a fresh release can be proposed.
+    cooldown:
+      default-days: 7
+    groups:
+      npm:
+        patterns:
+          - "*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    groups:
+      github-actions:
+        patterns:
+          - "*"

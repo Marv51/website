@@ -8,7 +8,7 @@ Marvin Rühe's personal website (deployed at **ruehe.me**, see `src/public/CNAME
 
 ## Repository layout
 
-The entire application lives in **`src/`** — `package.json`, lockfile, and all source are there, not at the repo root. Always run npm commands from `src/`. The root only holds Docker config, the README, and `.github/`.
+The entire application lives in **`src/`** — `package.json`, lockfile, and all source are there, not at the repo root. Always run npm commands from `src/`. The root only holds the README and `.github/`.
 
 ## Commands (run from `src/`)
 
@@ -19,10 +19,6 @@ The entire application lives in **`src/`** — `package.json`, lockfile, and all
 - `npm start` — serve a built app locally
 
 There is no test runner or linter configured.
-
-### Containerized dev (from repo root)
-
-`docker-compose up` runs the dev server in a Node 24 container. `src/` is bind-mounted to `/app` for live editing; `node_modules` is a named volume (Linux-native deps installed at container startup, so a `package.json` change just needs a container restart). `CHOKIDAR_USEPOLLING=true` is set because file events don't cross the bind mount on macOS/Windows. App is exposed at `localhost:5173`.
 
 ## Architecture
 

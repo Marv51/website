@@ -5,9 +5,9 @@ import { bilingualLinks, PAGES, SITE_URL } from "../seo-links";
 export const links: Route.LinksFunction = () => bilingualLinks(PAGES.home, "de");
 
 export function meta({}: Route.MetaArgs) {
-  const title = "Marvin Rühe — Teamleitung Softwareentwicklung";
+  const title = "Marvin Rühe — Lead Developer";
   const description =
-    "Marvin Rühe — Teamleitung Softwareentwicklung bei gb&t. Ich entwickle Windows-Apps (WinUI 3, WPF, MSIX), lokale KI und Web-Tools und leite die Entwicklung der preisgekrönten Software telani.";
+    "Marvin Rühe — Lead Developer bei gb&t. Ich entwickle Windows-Apps (WinUI 3, WPF, MSIX), lokale KI und Web-Tools und leite die Entwicklung der preisgekrönten Software telani.";
   const url = `${SITE_URL}${PAGES.home.de}`;
   const image = `${SITE_URL}/og-de.jpg`;
   return [

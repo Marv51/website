@@ -43,11 +43,11 @@ const PROJECTS = [
 
 const HERO = {
   en: {
-    role: "Team Lead, Software Development",
+    role: "Lead Developer",
     tagline: "I lead development of telani — building Windows apps, on-device AI, and web tools.",
   },
   de: {
-    role: "Teamleitung Softwareentwicklung",
+    role: "Lead Developer",
     tagline: "Ich leite die Entwicklung von telani — Windows-Apps, lokale KI und Web-Tools.",
   },
 };
@@ -86,8 +86,8 @@ const SMALL_PROJECTS: { name: string; url: string; desc_en: string; desc_de: str
   {
     name: "ruehe.me",
     url: "https://github.com/Marv51/website",
-    desc_en: "This very website — a React Router 7 static site (yes, it lists itself).",
-    desc_de: "Genau diese Website — eine statische React-Router-7-Seite (ja, sie listet sich selbst).",
+    desc_en: "This very website — a React Router 8 static site (yes, it lists itself).",
+    desc_de: "Genau diese Website — eine statische React-Router-8-Seite (ja, sie listet sich selbst).",
   },
 ];
 
@@ -123,18 +123,18 @@ const EXPERIENCE = [
   {
     period_en: "2026 – present",
     period_de: "2026 – heute",
-    role_en: "Team Lead, Software Development",
-    role_de: "Teamleitung Softwareentwicklung",
+    role_en: "Lead Developer",
+    role_de: "Lead Developer",
     org_en: "gb&t Gebäudebestand und Technik",
     org_de: "gb&t Gebäudebestand und Technik",
     desc_en: "Product direction, roadmap, and architecture of telani; on-device AI (ONNX, semantic search), open-sourcing core libraries, and mentoring.",
     desc_de: "Produktausrichtung, Roadmap und Architektur von telani; lokale KI (ONNX, Semantic Search), Open-Sourcing von Kern-Bibliotheken und Mentoring.",
   },
   {
-    period_en: "2022 – 2026",
-    period_de: "2022 – 2026",
-    role_en: "Lead Software Developer",
-    role_de: "Leitender Softwareentwickler",
+    period_en: "2022 – 2025",
+    period_de: "2022 – 2025",
+    role_en: "Senior Software Developer",
+    role_de: "Senior-Softwareentwickler",
     org_en: "gb&t Gebäudebestand und Technik",
     org_de: "gb&t Gebäudebestand und Technik",
     desc_en: "Drove telani to FeuerTrutz Product of the Year 2024 and the vfdb Excellence Award 2024. Built CI/CD pipelines and integrated React WebView components.",
@@ -143,8 +143,8 @@ const EXPERIENCE = [
   {
     period_en: "2019 – 2022",
     period_de: "2019 – 2022",
-    role_en: "Software Developer — telani",
-    role_de: "Softwareentwickler — telani",
+    role_en: "Software Developer — sole developer of telani",
+    role_de: "Softwareentwickler — alleinverantwortlich für telani",
     org_en: "gb&t Gebäudebestand und Technik",
     org_de: "gb&t Gebäudebestand und Technik",
     desc_en: "Built telani from a C# WPF app to WinUI 3 + MSIX, with a PHP/Symfony license & user backend.",
