@@ -35,16 +35,6 @@ Other scripts (from `src/`):
 - `npm run typecheck` — `react-router typegen` then `tsc`
 - `npm start` — serve a built app locally
 
-### Containerized development
-
-From the repository root:
-
-```bash
-docker-compose up
-```
-
-This runs the dev server in a Node 24 container with `src/` bind-mounted for live editing, reachable at http://localhost:5173. Dependencies install at container startup, so a `package.json` change just needs a container restart.
-
 ## Deployment
 
 Pushing to `main` triggers [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml), which builds the site and publishes `src/build/client` to GitHub Pages. Pull requests build but do not deploy.
