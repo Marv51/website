@@ -1,3 +1,4 @@
+import { ViewTransition } from "react";
 import { Project } from "../project/project";
 import { Profiles } from "../profiles/profiles";
 import { XamlDoc } from "./xaml";
@@ -190,7 +191,9 @@ export function Welcome({lang}: {lang: string}) {
       <section className="hero">
         <img className="hero-avatar" src={avatar} alt="Marvin Rühe" />
         <div className="hero-text">
-          <h1 className="hero-name">Marvin R&uuml;he</h1>
+          <ViewTransition name="site-name" share="morph">
+            <h1 className="hero-name">Marvin R&uuml;he</h1>
+          </ViewTransition>
           <p className="hero-role">{hero.role}</p>
           <p className="hero-tagline">{hero.tagline}</p>
           <p className="hero-location">

@@ -898,3 +898,21 @@ p{
     font-size: 84pt;
   }
 }
+
+/* View transitions (React <ViewTransition>): the header stays put while page
+   content cross-fades, and the name morphs between hero and nav brand. */
+::view-transition-group(site-name){
+  animation-duration: 350ms;
+  animation-timing-function: ease-in-out;
+}
+::view-transition-old(page),
+::view-transition-new(page){
+  animation-duration: 180ms;
+}
+@media (prefers-reduced-motion: reduce){
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*){
+    animation: none !important;
+  }
+}

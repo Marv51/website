@@ -1,5 +1,6 @@
 import type { Route } from "./+types/layout";
 import { Imprint } from "../imprint/imprint";
+import { ViewTransition } from "react";
 import { Outlet } from "react-router";
 import { Footer } from "../footer/footer";
 import { LangSwitcher } from "../lang-switcher/lang-switcher";
@@ -19,7 +20,9 @@ export default function Layout() {
     </div>
 </div>
   <div className="container main-content">
-    <Outlet />
+    <ViewTransition name="page">
+      <Outlet />
+    </ViewTransition>
     
 
     <Footer lang="de" />

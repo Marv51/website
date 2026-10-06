@@ -1,3 +1,4 @@
+import { ViewTransition } from "react";
 import { Link, useLocation } from "react-router";
 import { PAGES, type Lang } from "../seo-links";
 
@@ -13,7 +14,9 @@ export function NavBrand({ lang }: { lang: Lang }) {
 
   return (
     <Link className="nav-brand" to={home}>
-      Marvin R&uuml;he
+      <ViewTransition name="site-name" share="morph">
+        <span>Marvin R&uuml;he</span>
+      </ViewTransition>
     </Link>
   );
 }
