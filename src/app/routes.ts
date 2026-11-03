@@ -3,6 +3,7 @@ import { type RouteConfig, index, layout, prefix, route } from "@react-router/de
 export default [
     
     route("/Project-Quick-Open/datenschutz.html", "routes/project-quick-privacy.tsx"),
+    route("/StorageView/datenschutz.html", "routes/storage-view-privacy.tsx"),
     route("/SWR3App/datenschutz.html", "routes/swr3-app-privacy.tsx"),
     route("404", "routes/not-found.tsx", { "index": true}),
     route("sitemap.xml", "routes/sitemap.tsx"),
