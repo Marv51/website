@@ -10,12 +10,14 @@ export default [
         index("routes/home.tsx"),
         ...prefix("en", [
             route("imprint", "routes/imprint.tsx"),
+            route("storage-view/privacy", "routes/storage-view-privacy.tsx"),
         ]),
     ]),
     layout("routes/layout-de.tsx", [
         ...prefix("de", [
             index("routes/home-de.tsx"),
             route("impressum", "routes/imprint-de.tsx"),
+            route("storage-view/datenschutz", "routes/storage-view-privacy-de.tsx"),
         ]),
     ]),
     

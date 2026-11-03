@@ -9,8 +9,17 @@ import { NavLink } from "react-router";
 
 const PROJECTS = [
   {
-    projectName: "Project-Quick-Open",
+    projectName: "Storage View",
     priority: true,
+    description_en: "Windows 11 app that shows at a glance what is taking up your disk space.",
+    description_de: "Windows 11 App, die auf einen Blick zeigt, was den Speicherplatz belegt.",
+    link_target: "https://apps.microsoft.com/detail/9NDMK5WTZCCM",
+    link_text_en: "Microsoft Store",
+    link_text_de: "Microsoft Store",
+    image: "/img/storageView.jpg",
+  },
+  {
+    projectName: "Project-Quick-Open",
     description_en: "Windows 11 app to find and open frequently opened projects.",
     description_de: "Windows 11 App um häufig benutzte Ordner schnell wiederzufinden und zu öffnen.",
     link_target: "https://www.microsoft.com/store/apps/9N2J8WKZ7PC2",

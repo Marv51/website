@@ -11,6 +11,7 @@ export type PagePair = { en: string; de: string };
 export const PAGES = {
   home: { en: "/", de: "/de" },
   imprint: { en: "/en/imprint", de: "/de/impressum" },
+  storageViewPrivacy: { en: "/en/storage-view/privacy", de: "/de/storage-view/datenschutz" },
 } as const satisfies Record<string, PagePair>;
 
 /** Canonical + hreflang alternate <link>s for one page in one language. */
