@@ -467,6 +467,12 @@ h2{
   display: inline-block;
 }
 
+.policy h3{
+  font-size: 14pt;
+  font-weight: 400;
+  margin: 28px 0 8px 0;
+}
+
 .row{
   margin: 0;
   display: grid;

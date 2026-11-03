@@ -1,12 +1,15 @@
 import type { Route } from "./+types/storage-view-privacy";
-import { StorageView } from "../storage-view/storage-view";
+import { StorageViewPrivacy } from "../storage-view/storage-view";
+import { bilingualLinks, PAGES } from "../seo-links";
+
+export const links: Route.LinksFunction = () => bilingualLinks(PAGES.storageViewPrivacy, "en");
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Datenschutzerklärung für Storage View" },
+    { title: "Storage View - Privacy Policy" },
   ];
 }
 
-export default function StorageViewPrivacy() {
-  return <StorageView />;
+export default function StorageViewPrivacyEn() {
+  return <StorageViewPrivacy lang="en" />;
 }
