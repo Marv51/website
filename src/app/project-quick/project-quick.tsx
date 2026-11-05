@@ -2,7 +2,8 @@
 export function ProjectQuick(){
     return (
 <div className="policy">
-    <h1>Datenschutzerkl&auml;rung für Project-Quick-Open</h1>
+<section lang="de">
+    <h2>Datenschutzerkl&auml;rung für Project-Quick-Open</h2>
     <p>
     Project-Quick-Open ist eine Application die von mir, Marvin Rühe, entwickelt wurde. 
     Sie wird exklusiv über den Microsoft Store vertrieben.
@@ -23,8 +24,10 @@ export function ProjectQuick(){
     <p>
     Zuletzt verändert: 19. January 2018
     </p>
+</section>
 
-    <h1>Privacy Policy for Project-Quick-Open</h1>
+<section lang="en">
+    <h2>Privacy Policy for Project-Quick-Open</h2>
     <p>
     Project-Quick-Open is an application developed by me, Marvin Rühe. 
     It is distributed exclusively through the Microsoft Store.
@@ -45,6 +48,7 @@ export function ProjectQuick(){
     <p>
     Last modified: January 19th, 2018
     </p>
+</section>
 </div>
     );
 }
