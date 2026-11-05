@@ -467,6 +467,22 @@ h2{
   display: inline-block;
 }
 
+.policy section + section{
+  margin-top: 72px;
+  padding-top: 8px;
+  border-top: 1px solid var(--accent);
+}
+
+.policy section > h2:first-child{
+  margin-top: 24px;
+}
+
+.policy .policy-modified{
+  font-size: 10pt;
+  opacity: 0.6;
+  margin-top: 28px;
+}
+
 .policy h3{
   font-size: 14pt;
   font-weight: 400;

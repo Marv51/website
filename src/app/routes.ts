@@ -2,8 +2,6 @@ import { type RouteConfig, index, layout, prefix, route } from "@react-router/de
 
 export default [
     
-    route("/Project-Quick-Open/datenschutz.html", "routes/project-quick-privacy.tsx"),
-    route("/SWR3App/datenschutz.html", "routes/swr3-app-privacy.tsx"),
     route("404", "routes/not-found.tsx", { "index": true}),
     route("sitemap.xml", "routes/sitemap.tsx"),
     layout("routes/layout.tsx", [
@@ -14,6 +12,9 @@ export default [
         ]),
     ]),
     layout("routes/layout-de.tsx", [
+        // Legacy German-only app privacy policies; URLs kept stable (app store links).
+        route("/Project-Quick-Open/datenschutz.html", "routes/project-quick-privacy.tsx"),
+        route("/SWR3App/datenschutz.html", "routes/swr3-app-privacy.tsx"),
         ...prefix("de", [
             index("routes/home-de.tsx"),
             route("impressum", "routes/imprint-de.tsx"),
