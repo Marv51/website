@@ -11,6 +11,7 @@ const PROJECTS = [
   {
     projectName: "Storage View",
     priority: true,
+    comingSoon: true,
     description_en: "Windows 11 app that shows at a glance what is taking up your disk space.",
     description_de: "Windows 11 App, die auf einen Blick zeigt, was den Speicherplatz belegt.",
     link_target: "https://apps.microsoft.com/detail/9NDMK5WTZCCM",
@@ -41,6 +42,7 @@ const PROJECTS = [
   {
     projectName: "SWR3-Radio App",
     retired: true,
+    buttonDisabled: true,
     description_en: "The easiest way to listen to the local German radio station SWR3",
     description_de: "Die einfachste Art unter Windows 8.1 und 10, SWR3 als Webradio zu hören.",
     note_en: "📥 35,000 downloads on the Windows 8 Store",
