@@ -13,7 +13,9 @@ function normalize(pathname: string): string {
 export function LangSwitcher() {
   const pathname = normalize(useLocation().pathname);
   const { en, de } =
-    pagePairs.find((p) => p.en === pathname || p.de === pathname) ?? PAGES.home;
+    pagePairs.find((p) => p.en === pathname || p.de === pathname) ??
+    // Pages without an English equivalent (legacy German-only policies).
+    { en: PAGES.home.en, de: pathname };
 
   return (
     <div className="lang">

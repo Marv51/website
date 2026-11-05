@@ -1,7 +1,7 @@
 
 export function ProjectQuick(){
     return (
-<>
+<div className="policy">
     <h1>Datenschutzerkl&auml;rung für Project-Quick-Open</h1>
     <p>
     Project-Quick-Open ist eine Application die von mir, Marvin Rühe, entwickelt wurde. 
@@ -45,6 +45,6 @@ export function ProjectQuick(){
     <p>
     Last modified: January 19th, 2018
     </p>
-</>
+</div>
     );
 }
