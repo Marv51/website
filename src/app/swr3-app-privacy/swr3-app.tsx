@@ -9,7 +9,7 @@ export function SWR3App(){
     </p>
     <p>
     Durch den Zugriff auf den Livestream und das abrufen der Metadaten erfasst der SWR möglicher statistische Daten über Sie. 
-    Die Datenschutzerklärung des SWR finden Sie unter <a href="https://www.swr3.de/datenschutz/index.html">https://www.swr3.de/datenschutz/</a>
+    Die Datenschutzerklärung des SWR finden Sie unter <a href="https://www.swr3.de/datenschutz/index.html" rel="nofollow noopener noreferrer">https://www.swr3.de/datenschutz/</a>
     </p>
 </section>
 </div>
