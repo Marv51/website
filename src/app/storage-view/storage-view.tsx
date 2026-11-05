@@ -84,7 +84,7 @@ export function StorageViewPrivacy({lang}: {lang: string}){
                     lodge a complaint with a data protection supervisory authority (Art. 77 GDPR), for example the
                     State Commissioner for Data Protection and Freedom of Information of Baden-Württemberg.
                 </p>
-                <p>
+                <p className="policy-modified">
                     Last modified: November 3rd, 2026
                 </p>
             </div>
@@ -176,7 +176,7 @@ export function StorageViewPrivacy({lang}: {lang: string}){
                 (Art. 77 DSGVO), zum Beispiel beim Landesbeauftragten für den Datenschutz und die
                 Informationsfreiheit Baden-Württemberg.
             </p>
-            <p>
+            <p className="policy-modified">
                 Zuletzt verändert: 3. November 2026
             </p>
         </div>
