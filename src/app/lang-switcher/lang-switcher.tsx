@@ -1,41 +1,36 @@
-import { NavLink, useLocation } from "react-router";
+import { Link, useLocation } from "react-router";
 import { PAGES, type PagePair } from "../seo-links";
 
 // Equivalent EN ↔ DE page pairs come from the single source of truth in
 // seo-links.ts, so a page added there automatically works in the switcher too.
 const pagePairs = Object.values(PAGES) as PagePair[];
 
-function equivalentPaths(pathname: string): PagePair {
-  return (
-    pagePairs.find((p) => p.en === pathname || p.de === pathname) ??
-    PAGES.home
-  );
+// Tolerate trailing slashes, e.g. "/en/storage-view/privacy/".
+function normalize(pathname: string): string {
+  return pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
 }
 
 export function LangSwitcher() {
-  const { pathname } = useLocation();
-  const { en, de } = equivalentPaths(pathname);
+  const pathname = normalize(useLocation().pathname);
+  const { en, de } =
+    pagePairs.find((p) => p.en === pathname || p.de === pathname) ?? PAGES.home;
 
   return (
     <div className="lang">
-      <NavLink
-        className={({ isActive }) =>
-          isActive ? "lang-left" : "not-active lang-left"
-        }
+      <Link
+        className={pathname === en ? "lang-left" : "not-active lang-left"}
+        aria-current={pathname === en ? "page" : undefined}
         to={en}
-        end
       >
         en
-      </NavLink>
-      <NavLink
-        className={({ isActive }) =>
-          isActive ? "lang-right" : "not-active lang-right"
-        }
+      </Link>
+      <Link
+        className={pathname === de ? "lang-right" : "not-active lang-right"}
+        aria-current={pathname === de ? "page" : undefined}
         to={de}
-        end
       >
         de
-      </NavLink>
+      </Link>
     </div>
   );
 }
