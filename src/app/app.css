@@ -804,16 +804,6 @@ h2{
   border-radius: 4px;
 }
 
-.project-btn.disabled{
-  opacity: .5;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.project-badge-soon{
-  background-color: #0a6cff;
-}
-
 .project-card-retired img.img-polaroid{
   filter: grayscale(0.5);
   opacity: .85;

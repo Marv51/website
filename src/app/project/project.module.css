@@ -1,0 +1,9 @@
+:global(.project-badge).badgeSoon{
+  background-color: #0a6cff;
+}
+
+:global(.project-btn).buttonDisabled{
+  opacity: .5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

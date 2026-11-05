@@ -1,3 +1,5 @@
+import styles from "./project.module.css";
+
 export function Project({lang, projectName, image, link_target, description_en, description_de, link_text_de = null, link_text_en = null, priority = false, retired = false, comingSoon = false, buttonDisabled = false, note_en = null, note_de = null} : {
     lang: string,
     projectName: string,
@@ -26,13 +28,13 @@ export function Project({lang, projectName, image, link_target, description_en, 
                 <span className="project-card-media" aria-disabled="true">
                     <img src={image} {...(priority ? {fetchPriority: "high"} : {})} className="img-polaroid" alt={projectName} />
                     {retired && <span className="project-badge">{lang === "de" ? "Eingestellt" : "Retired"}</span>}
-                    {comingSoon && <span className="project-badge project-badge-soon">{lang === "de" ? "Demnächst" : "Coming soon"}</span>}
+                    {comingSoon && <span className={`project-badge ${styles.badgeSoon}`}>{lang === "de" ? "Demnächst" : "Coming soon"}</span>}
                 </span>
             ) : (
                 <a className="project-card-media" target="_blank" rel="noopener noreferrer" href={link_target}>
                     <img src={image} {...(priority ? {fetchPriority: "high"} : {})} className="img-polaroid" alt={projectName} />
                     {retired && <span className="project-badge">{lang === "de" ? "Eingestellt" : "Retired"}</span>}
-                    {comingSoon && <span className="project-badge project-badge-soon">{lang === "de" ? "Demnächst" : "Coming soon"}</span>}
+                    {comingSoon && <span className={`project-badge ${styles.badgeSoon}`}>{lang === "de" ? "Demnächst" : "Coming soon"}</span>}
                 </a>
             )}
             <h3>{projectName}</h3>
@@ -40,7 +42,7 @@ export function Project({lang, projectName, image, link_target, description_en, 
             {note && <p className="project-note">{note}</p>}
             <p className="project-card-actions">
                 {buttonDisabled ? (
-                    <span className="btn project-btn disabled" aria-disabled="true">
+                    <span className={`btn project-btn ${styles.buttonDisabled}`} aria-disabled="true">
                         {linkText} <span className="project-btn-arrow">&raquo;</span>
                     </span>
                 ) : (
