@@ -21,8 +21,8 @@ export function ProjectQuick(){
     Microsoft Store abgewickelt werden. Falls Sie Fragen zu Ihrer Privatsph&auml;re dort haben, 
     überprüfen Sie bitte deren Datenschutzerklärung.
     </p>
-    <p>
-    Zuletzt verändert: 19. January 2018
+    <p className="policy-modified">
+    Zuletzt verändert: 19. Januar 2018
     </p>
 </section>
 
@@ -45,7 +45,7 @@ export function ProjectQuick(){
     Additionally, please notice that the download and purchase of this app is handled by 
     the Microsoft Store. If you have any questions about your privacy there, please check their policy.
     </p>
-    <p>
+    <p className="policy-modified">
     Last modified: January 19th, 2018
     </p>
 </section>

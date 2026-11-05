@@ -477,6 +477,12 @@ h2{
   margin-top: 24px;
 }
 
+.policy .policy-modified{
+  font-size: 10pt;
+  opacity: 0.6;
+  margin-top: 28px;
+}
+
 .policy h3{
   font-size: 14pt;
   font-weight: 400;
